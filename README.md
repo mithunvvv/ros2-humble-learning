@@ -23,6 +23,18 @@ docker run -it \
   osrf/ros:humble-desktop
 ```
 
+```
+docker run -p 6080:80 \
+  --security-opt seccomp=unconfined \
+  --volume="/Users/mithunvanniasinghe/ros2-humble-learning:/home/ubuntu" \
+  --shm-size=512m \
+  ghcr.io/tiryoh/ros2-desktop-vnc:humble 
+
+```
+
+https://github.com/Tiryoh/docker-ros2-desktop-vnc
+
+```http://127.0.0.1:6080/```
 https://medium.com/@arohanaday/how-i-set-up-ros-2-on-my-macbook-using-docker-without-losing-my-sanity-fe6e55857cc2 
 
 ```
@@ -79,3 +91,19 @@ After creating a new node:
 ```colcon build --symlink-install ```
 this symlink prevents you from having to rebuild each time you make a change
 activate it for the first time by sourcing the bashrc file 
+
+
+### Topics
+
+Nodes can either publish or subscribe to a topic
+topic are mid-point between nodes that wanna communicate with one another
+
+Nodes don't direct to each other 
+
+Topics have a data type 
+- can inspect with `ros2 interface show <name of type>`
+
+
+### Topic Publisher 
+
+### Topic Subscriber 

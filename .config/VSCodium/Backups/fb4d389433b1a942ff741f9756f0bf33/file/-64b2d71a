@@ -1,0 +1,3 @@
+file:///home/ubuntu/ros2_ws/my_robot_controller/my_robot_controller/pos_sub.py {"mtime":1746539343258,"ctime":0,"size":0,"etag":"3e76l67r30","orphaned":false,"typeId":""}
+#!/usr/lib/env python3
+import rcl

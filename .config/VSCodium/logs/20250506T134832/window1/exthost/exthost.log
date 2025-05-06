@@ -1,0 +1,28 @@
+2025-05-06 13:48:33.886 [info] Extension host with pid 1047 started
+2025-05-06 13:48:33.975 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-05-06 13:48:34.027 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-05-06 13:48:34.069 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-06 13:48:34.127 [info] Eager extensions activated
+2025-05-06 13:48:34.134 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-06 13:48:34.136 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-06 13:49:15.153 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-06 13:49:15.160 [info] Extension host with pid 1047 exiting with code 0
+2025-05-06 13:49:15.836 [info] Extension host with pid 1189 started
+2025-05-06 13:49:15.839 [info] Skipping acquiring lock for /home/ubuntu/.config/VSCodium/User/workspaceStorage/6d60914f4b41dca79cf9bbc0d3b2e755.
+2025-05-06 13:49:15.912 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-05-06 13:49:15.917 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-06 13:49:15.939 [info] Eager extensions activated
+2025-05-06 13:49:15.939 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-06 13:49:15.941 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-06 13:49:17.737 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-05-06 13:49:43.355 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-06 13:49:43.360 [info] Extension host with pid 1189 exiting with code 0
+2025-05-06 13:49:44.055 [info] Extension host with pid 1261 started
+2025-05-06 13:49:44.055 [info] Skipping acquiring lock for /home/ubuntu/.config/VSCodium/User/workspaceStorage/b878f5c721cda5050724a1d9786a5724.
+2025-05-06 13:49:44.070 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-05-06 13:49:44.080 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-06 13:49:44.097 [info] Eager extensions activated
+2025-05-06 13:49:44.097 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-06 13:49:44.099 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-06 13:49:45.483 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-05-06 13:49:48.245 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'

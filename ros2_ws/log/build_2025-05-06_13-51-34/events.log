@@ -1,0 +1,46 @@
+[0.000000] (-) TimerEvent: {}
+[0.000291] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.000386] (my_robot_controller) JobStarted: {'identifier': 'my_robot_controller'}
+[0.104243] (-) TimerEvent: {}
+[0.205365] (-) TimerEvent: {}
+[0.309802] (-) TimerEvent: {}
+[0.366745] (my_robot_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/my_robot_controller', 'build', '--build-base', '/home/ubuntu/ros2_ws/build/my_robot_controller/build', 'install', '--record', '/home/ubuntu/ros2_ws/build/my_robot_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros2_ws/my_robot_controller', 'env': {'VNCDESKTOP': '4dce524fe217:1 (ubuntu)', 'QT_SCALE_FACTOR': '1', 'USER': 'ubuntu', 'SUPERVISOR_GROUP_NAME': 'vnc', 'HOSTNAME': '4dce524fe217', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/ros2_ws/my_robot_controller', 'GIO_LAUNCHED_DESKTOP_FILE': '/home/ubuntu/Desktop/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-GSyT9NtP7W,guid=07e60aad69e3cd4d3ba00394681a122e', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '666', 'GNOME_KEYRING_CONTROL': '/home/ubuntu/.cache/keyring-4VGB62', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'ROS_LOCALHOST_ONLY': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/4dce524fe217:@/tmp/.ICE-unix/73,unix/4dce524fe217:/tmp/.ICE-unix/73', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LD_PRELOAD': '/lib/aarch64-linux-gnu/libgcc_s.so.1', 'XDG_CURRENT_DESKTOP': 'MATE', 'SUPERVISOR_ENABLED': '1', 'SSH_AUTH_SOCK': '/home/ubuntu/.cache/keyring-4VGB62/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'TERMINATOR_UUID': 'urn:uuid:99575596-934e-4bbe-9ec9-5d71b0d1b059', 'PASSWD': 'ubuntu', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'SUPERVISOR_PROCESS_NAME': 'vnc', 'PWD': '/home/ubuntu/ros2_ws/build/my_robot_controller', 'PYTHONPATH': '/home/ubuntu/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '6800', 'QT_FONT_DPI': '96'}, 'shell': False}
+[0.410247] (-) TimerEvent: {}
+[0.492112] (my_robot_controller) StdoutLine: {'line': b'running egg_info\n'}
+[0.492815] (my_robot_controller) StdoutLine: {'line': b'creating ../build/my_robot_controller/my_robot_controller.egg-info\n'}
+[0.493261] (my_robot_controller) StdoutLine: {'line': b'writing ../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO\n'}
+[0.494481] (my_robot_controller) StdoutLine: {'line': b'writing dependency_links to ../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt\n'}
+[0.495103] (my_robot_controller) StdoutLine: {'line': b'writing entry points to ../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt\n'}
+[0.495663] (my_robot_controller) StdoutLine: {'line': b'writing requirements to ../build/my_robot_controller/my_robot_controller.egg-info/requires.txt\n'}
+[0.496075] (my_robot_controller) StdoutLine: {'line': b'writing top-level names to ../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt\n'}
+[0.496654] (my_robot_controller) StdoutLine: {'line': b"writing manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[0.499080] (my_robot_controller) StdoutLine: {'line': b"reading manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[0.500363] (my_robot_controller) StdoutLine: {'line': b"writing manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[0.500640] (my_robot_controller) StdoutLine: {'line': b'running build\n'}
+[0.500912] (my_robot_controller) StdoutLine: {'line': b'running build_py\n'}
+[0.501298] (my_robot_controller) StdoutLine: {'line': b'creating /home/ubuntu/ros2_ws/build/my_robot_controller/build\n'}
+[0.501746] (my_robot_controller) StdoutLine: {'line': b'creating /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib\n'}
+[0.502150] (my_robot_controller) StdoutLine: {'line': b'creating /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[0.502515] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/__init__.py -> /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[0.503120] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/pos_sub.py -> /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[0.503879] (my_robot_controller) StdoutLine: {'line': b'running install\n'}
+[0.504081] (my_robot_controller) StdoutLine: {'line': b'running install_lib\n'}
+[0.505138] (my_robot_controller) StdoutLine: {'line': b'creating /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[0.505446] (my_robot_controller) StdoutLine: {'line': b'copying /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[0.506316] (my_robot_controller) StdoutLine: {'line': b'copying /home/ubuntu/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/pos_sub.py -> /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[0.507523] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc\n'}
+[0.508804] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/pos_sub.py to pos_sub.cpython-310.pyc\n'}
+[0.509993] (my_robot_controller) StdoutLine: {'line': b'running install_data\n'}
+[0.510318] (my_robot_controller) StdoutLine: {'line': b'creating /home/ubuntu/ros2_ws/install/my_robot_controller/share/ament_index\n'}
+[0.510618] (-) TimerEvent: {}
+[0.510733] (my_robot_controller) StdoutLine: {'line': b'creating /home/ubuntu/ros2_ws/install/my_robot_controller/share/ament_index/resource_index\n'}
+[0.510972] (my_robot_controller) StdoutLine: {'line': b'creating /home/ubuntu/ros2_ws/install/my_robot_controller/share/ament_index/resource_index/packages\n'}
+[0.511183] (my_robot_controller) StdoutLine: {'line': b'copying resource/my_robot_controller -> /home/ubuntu/ros2_ws/install/my_robot_controller/share/ament_index/resource_index/packages\n'}
+[0.511868] (my_robot_controller) StdoutLine: {'line': b'copying package.xml -> /home/ubuntu/ros2_ws/install/my_robot_controller/share/my_robot_controller\n'}
+[0.512599] (my_robot_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.514077] (my_robot_controller) StdoutLine: {'line': b'Copying ../build/my_robot_controller/my_robot_controller.egg-info to /home/ubuntu/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info\n'}
+[0.521892] (my_robot_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[0.536283] (my_robot_controller) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros2_ws/build/my_robot_controller/install.log'\n"}
+[0.553319] (my_robot_controller) CommandEnded: {'returncode': 0}
+[0.569459] (my_robot_controller) JobEnded: {'identifier': 'my_robot_controller', 'rc': 0}
+[0.571341] (-) EventReactorShutdown: {}

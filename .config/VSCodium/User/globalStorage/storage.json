@@ -1,0 +1,75 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "3424b72ee104e99be183dc60a7b751a058f3ff95747d04922fb59889f7e032b1",
+    "telemetry.devDeviceId": "accb69e0-e0e9-47be-8165-47b6b18026b5",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/ubuntu/ros2_ws/my_robot_controller/my_robot_controller"
+            },
+            {
+                "folderUri": "file:///home/ubuntu/ros2_ws/my_robot_controller"
+            }
+        ],
+        "emptyWindows": [
+            {
+                "backupFolder": "1746539313005"
+            }
+        ]
+    },
+    "windowControlHeight": 35,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/ubuntu/ros2_ws/my_robot_controller/my_robot_controller": "__default__profile__",
+            "file:///home/ubuntu/ros2_ws/my_robot_controller": "__default__profile__"
+        },
+        "emptyWindows": {
+            "1746539313005": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1f1f1f",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1f1f1f",
+            "editorBackground": "#1f1f1f",
+            "titleBarBackground": "#181818",
+            "titleBarBorder": "#2b2b2b",
+            "activityBarBackground": "#181818",
+            "activityBarBorder": "#2b2b2b",
+            "sideBarBackground": "#181818",
+            "sideBarBorder": "#2b2b2b",
+            "statusBarBackground": "#181818",
+            "statusBarBorder": "#2b2b2b",
+            "statusBarNoFolderBackground": "#1f1f1f"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 300,
+            "auxiliarySideBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/ubuntu/ros2_ws/my_robot_controller",
+            "backupPath": "/home/ubuntu/.config/VSCodium/Backups/fb4d389433b1a942ff741f9756f0bf33",
+            "uiState": {
+                "mode": 1,
+                "x": 148,
+                "y": 28,
+                "width": 1200,
+                "height": 722
+            }
+        },
+        "openedWindows": []
+    }
+}
