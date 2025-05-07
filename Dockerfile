@@ -17,6 +17,15 @@ RUN apt-get update && apt-get install -y \
     sudo \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | apt-key add - \
+    && sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list' \
+    && apt-get update && apt-get install -y \
+    ros-humble-pcl-ros \
+    ros-humble-tf2-eigen \
+    ros-humble-rviz2 \
+    && rm -rf /var/lib/apt/lists/*
+
+
 # Create a non-root user (e.g., devuser)
 ARG USERNAME=devuser
 ARG USER_UID=1000
