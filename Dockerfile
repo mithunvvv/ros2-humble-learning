@@ -25,6 +25,18 @@ RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | apt
     ros-humble-rviz2 \
     && rm -rf /var/lib/apt/lists/*
 
+RUN apt update && apt install -y \       
+    build-essential \        
+    libeigen3-dev \
+    libjsoncpp-dev \
+    libspdlog-dev \
+    libcurl4-openssl-dev \
+    libpcap-dev \
+    libtins-dev \
+    cmake \
+    python3-colcon-common-extensions \ 
+    && rm -rf /var/lib/apt/lists/*
+
 
 # Create a non-root user (e.g., devuser)
 ARG USERNAME=devuser

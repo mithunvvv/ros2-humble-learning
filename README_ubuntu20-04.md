@@ -30,6 +30,13 @@ docker run -it \
     
 ```
 
+ros2 launch ouster_ros sensor.launch.xml sensor_hostname:=192.168.131.18 use_system_default_qos:=true timestamp_mode:=TIME_FROM_ROS_TIME sensor_qos_profile:=reliable proc_mask:="IMG|PCL" viz:=true
+
+tmuxp load ${VTRSRC}/launch/online_ouster_jackal.launch.yaml
+
+source /opt/ros/humble/setup.bash 
+
+
 Next:
 1. allow for ros2 autocomplete:
 add the following to the bashrc file 
