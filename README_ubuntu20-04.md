@@ -21,7 +21,12 @@ docker run -it \
   --env="QT_X11_NO_MITSHM=1" \
   --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
   --volume="/home/mva/ros2-humble-learning:/home/devuser/ros2-humble-learning" \
-    ros2-dev:v3   
+  --gpus all \
+  -v /dev/dri:/dev/dri \
+  --privileged \
+  --network host \
+  --ipc=host \
+  ros2-dev
     
 ```
 
@@ -62,13 +67,7 @@ allows for colcon to do autocompletions (cli tool to build ros2 workspaces)
 
 5. build the package(s)
 
-go back to the workspace folder and run
-
-```
-colcon build 
-```
-
-6. 
+go back to the workspace folder and runlibpcap-dev
 
 ## Creating Service
 
@@ -78,3 +77,22 @@ Service can act like a client and server
 used for a computation or change of setting 
 
 Topics used to send data without expecting an answer, ex, command vel
+libpcap-dev   \
+    pcap_file:=<path to ouster pcap file>       \
+    metadata:=<json file name>              # required
+
+  ros2 launch ouster_ros replay_pcap.launch.xml \
+  pcap_file:=data/2048x10-dual.pcap \
+  metadata:=data/2048x10-dual.json
+
+
+source /opt/ros/humble/setup.bash --BUILD_PCAP
+
+
+
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release 
+
+
+
+
+ replace ros-distro with 'rolling', 'humble', 'iron' or 'jazzy'
