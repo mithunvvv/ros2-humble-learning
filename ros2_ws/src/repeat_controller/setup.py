@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "mpc_action_repeat = repeat_controller.action_publisher:main"
         ],
     },
 )
