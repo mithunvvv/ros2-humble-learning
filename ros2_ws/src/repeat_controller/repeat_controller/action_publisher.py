@@ -24,10 +24,11 @@ class MPCActionNode(Node):
         # self.mpc_action_sub = self.create_subscription(Twist, "/j100_0365/joy_teleop/cmd_vel", self.mpc_action_callback, 10)
         self.cmd_pub = self.create_publisher(Twist,"/j100_0365/platform/cmd_vel_unstamped", 10)
         self.teleop_sub = self.create_subscription(Joy, "/j100_0365/joy_teleop/joy", self.teleop_sub_callback, 10)
-        self.twist_command = Twist()
-        self.twist_command.linear.x = 0.0
-        self.twist_command.linear.y = 0.0
-        self.twist_command.angular.z = 0.0
+        self.mpc_twist_command = Twist()
+        self.action = Twist()
+        self.mpc_twist_command.linear.x = 0.0
+        self.mpc_twist_command.linear.y = 0.0
+        self.mpc_twist_command.angular.z = 0.0
         self.publish_action_timer = self.create_timer(0.01, self.publish_cmd)
 
         self.start_pressed = False
@@ -35,19 +36,28 @@ class MPCActionNode(Node):
 
         
     def publish_cmd(self):
-        self.cmd_pub.publish(self.twist_command)
+        # publish commands based on condition of ps4 here
+        # callback always reads in MPC action 
+        # previosuly I had this always publishing and I had the condtional in the mpc action callback
+        # why did that create an issue where even though i pressed stop, it wouldnt stop? ==> i think it because u recieve the MPC at some freq,
+        #  by the time the aciton to be published is set, it will get published but then I press the stop button, 
+        # it is too late at that point bc the publish cmd function was called with the mpc action instead of the zero action
+        # now, the action that is published is defined by a diff variable and that variable only get set depending on the curr state of the buttons 
+        # previously, the mpc twist command was the one being published 
+        if self.start_pressed and not self.stop_pressed:
+            self.action = self.mpc_twist_command
+        else: 
+            self.action.linear.x = 0.0
+            self.action.linear.y = 0.0
+            self.action.angular.z = 0.0
+        self.cmd_pub.publish(self.action)
 
     def mpc_action_callback(self, msg: Path):
-        if self.start_pressed and not self.stop_pressed:
-            self.twist_command.linear.x = msg.linear.x
-            self.twist_command.linear.y = msg.linear.y
-            self.twist_command.angular.z = msg.angular.z 
-            self.get_logger().debug("Updated MPC command")
-        if self.stop_pressed:
-            self.twist_command.linear.x = 0.0
-            self.twist_command.linear.y = 0.0
-            self.twist_command.angular.z = 0.0
-            self.get_logger().debug("Updated MPC command")
+        self.mpc_twist_command.linear.x = msg.linear.x
+        self.mpc_twist_command.linear.y = msg.linear.y
+        self.mpc_twist_command.angular.z = msg.angular.z 
+        self.get_logger().debug("Updated MPC command")
+
 
 
     def teleop_sub_callback(self, msg: Joy):
@@ -58,7 +68,7 @@ class MPCActionNode(Node):
         else:
             self.stop_pressed = False
 
-        if msg.buttons[start_button_idx] == 1:
+        if msg.buttons[start_button_idx] == 1: # this stays true for the entire duration
             self.start_pressed = True
 
             
