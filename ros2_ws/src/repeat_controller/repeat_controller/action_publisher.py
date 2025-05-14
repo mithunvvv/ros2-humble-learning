@@ -27,7 +27,6 @@ class MPCActionNode(Node):
         self.mpc_twist_command = Twist()
         self.action = Twist()
         self.mpc_twist_command.linear.x = 0.0
-        self.mpc_twist_command.linear.y = 0.0
         self.mpc_twist_command.angular.z = 0.0
         self.publish_action_timer = self.create_timer(0.01, self.publish_cmd)
 
@@ -48,13 +47,11 @@ class MPCActionNode(Node):
             self.action = self.mpc_twist_command
         else: 
             self.action.linear.x = 0.0
-            self.action.linear.y = 0.0
             self.action.angular.z = 0.0
         self.cmd_pub.publish(self.action)
 
     def mpc_action_callback(self, msg: Path):
         self.mpc_twist_command.linear.x = msg.linear.x
-        self.mpc_twist_command.linear.y = msg.linear.y
         self.mpc_twist_command.angular.z = msg.angular.z 
         self.get_logger().debug("Updated MPC command")
 
