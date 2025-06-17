@@ -30,6 +30,33 @@ docker run -it \
     
 ```
 
+
+```
+docker build \
+  --build-arg UID=$(id -u) \
+  --build-arg GID=$(id -g) \
+  -t il_socialnav .
+```
+
+```
+xhost +local:docker
+docker run -it \
+  --env="DISPLAY" \
+  --env="QT_X11_NO_MITSHM=1" \
+  --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
+  --volume="/home/mva/ros2-humble-learning:/home/user/ros2-humble-learning" \
+  --volume="/media/mva/Extreme SSD2:/home/user/extremessd" \
+  --volume="/home/mva/IL_SocialNav:/home/user/IL_SocialNav" \
+  -v /home/mva/mmDetectionTorchScript:/home/user/mmdetection \
+  --gpus all \
+  -v /dev/dri:/dev/dri \
+  --privileged \
+  --network host \
+  --ipc=host \
+  il_socialnav   
+
+```
+
 ros2 launch ouster_ros sensor.launch.xml sensor_hostname:=192.168.131.18 use_system_default_qos:=true timestamp_mode:=TIME_FROM_ROS_TIME sensor_qos_profile:=reliable proc_mask:="IMG|PCL" viz:=true
 
 tmuxp load ${VTRSRC}/launch/online_ouster_jackal.launch.yaml
